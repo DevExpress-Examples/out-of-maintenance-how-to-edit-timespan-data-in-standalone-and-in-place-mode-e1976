@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/TimeSpanEditor/Form1.cs) (VB: [Form1.vb](./VB/TimeSpanEditor/Form1.vb))
+* [Program.cs](./CS/TimeSpanEditor/Program.cs) (VB: [Program.vb](./VB/TimeSpanEditor/Program.vb))
+* [TimeSpanEditor.cs](./CS/TimeSpanEditor/TimeSpanEditor.cs) (VB: [TimeSpanEditor.vb](./VB/TimeSpanEditor/TimeSpanEditor.vb))
+<!-- default file list end -->
 # How to edit TimeSpan data in standalone and in-place mode
 
 
