@@ -15,33 +15,11 @@ namespace TimeSpanEditor
         public Form1()
         {
             InitializeComponent();
+
+            timeSpanEdit1.Properties.Mask.EditMask = "hh:mm";
+            timeSpanEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.TimeSpan;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            cbeExportMode.Properties.Items.AddRange(new ExportMode[] { ExportMode.Default, ExportMode.DisplayText, ExportMode.Value });
-            cbeExportMode.EditValue = ExportMode.Default;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            string text = "";
-            if (timeSpanEdit.EditValue is TimeSpan)
-                text = "TimeSpan:  ";
-            if (timeSpanEdit.EditValue is string)
-                text = "String:  ";
-            this.Text = text + timeSpanEdit.EditValue.ToString();
-        }
-
-        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
-        {
-            timeSpanEdit.Properties.AllowDayInput = checkEditAllowDayInput.Checked; 
-        }
-
-        private void cbeExportMode_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            timeSpanEdit.Properties.ExportMode = (ExportMode)cbeExportMode.EditValue;
-        }
-
+       
     }
 }
