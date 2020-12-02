@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace TimeSpanEditor
+﻿Namespace TimeSpanEditor
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -25,38 +23,34 @@ Namespace TimeSpanEditor
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-            Me.TimeSpanEdit1 = New DevExpress.XtraEditors.TimeSpanEdit()
-            CType(Me.TimeSpanEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.SuspendLayout()
-            '
-            'TimeSpanEdit1
-            '
-            Me.TimeSpanEdit1.EditValue = System.TimeSpan.Parse("00:00:00")
-            Me.TimeSpanEdit1.Location = New System.Drawing.Point(56, 48)
-            Me.TimeSpanEdit1.Name = "TimeSpanEdit1"
-            Me.TimeSpanEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-            Me.TimeSpanEdit1.Properties.Mask.EditMask = "hh:mm"
-            Me.TimeSpanEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.TimeSpan
-            Me.TimeSpanEdit1.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.SpinButtons
-            Me.TimeSpanEdit1.Size = New System.Drawing.Size(223, 20)
-            Me.TimeSpanEdit1.TabIndex = 0
-            '
-            'Form1
-            '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(311, 309)
-            Me.Controls.Add(Me.TimeSpanEdit1)
-            Me.Name = "Form1"
-            Me.Text = "Form1"
-            CType(Me.TimeSpanEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.ResumeLayout(False)
+			Me.timeSpanEdit1 = New DevExpress.XtraEditors.TimeSpanEdit()
+			CType(Me.timeSpanEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+			Me.SuspendLayout()
+			' 
+			' timeSpanEdit1
+			' 
+			Me.timeSpanEdit1.EditValue = System.TimeSpan.Parse("00:00:00")
+			Me.timeSpanEdit1.Location = New System.Drawing.Point(52, 39)
+			Me.timeSpanEdit1.Name = "timeSpanEdit1"
+			Me.timeSpanEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+			Me.timeSpanEdit1.Properties.Mask.EditMask = "hh:mm"
+			Me.timeSpanEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.TimeSpan
+			Me.timeSpanEdit1.Properties.TimeEditStyle = DevExpress.XtraEditors.Repository.TimeEditStyle.SpinButtons
+			Me.timeSpanEdit1.Size = New System.Drawing.Size(191, 20)
+			Me.timeSpanEdit1.TabIndex = 0
+			' 
+			' Form1
+			' 
+			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+			Me.ClientSize = New System.Drawing.Size(311, 309)
+			Me.Controls.Add(Me.timeSpanEdit1)
+			Me.Name = "Form1"
+			Me.Text = "Form1"
+			CType(Me.timeSpanEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+			Me.ResumeLayout(False)
 
-        End Sub
-
-        Friend WithEvents TimeSpanEdit1 As DevExpress.XtraEditors.TimeSpanEdit
-
-#End Region
+		End Sub
 
 
 
@@ -64,6 +58,9 @@ Namespace TimeSpanEditor
 
 
 
-    End Class
+		#End Region
+
+		Private timeSpanEdit1 As DevExpress.XtraEditors.TimeSpanEdit
+	End Class
 End Namespace
 
